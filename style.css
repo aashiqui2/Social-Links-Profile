@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+:root{
+    --color1:hsl(0, 0%, 100%);
+    --color2: hsl(0, 0%, 20%);
+    --color3:hsl(0, 0%, 12%);
+    --color4:hsl(0, 0%, 8%);
+    --hover:hsl(75, 94%, 57%);
+    --font:"Inter", sans-serif;
+}
+
+body{
+    background: var(--color4);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+}
+.container{
+    width: 320px;
+    height: 525px;
+    background: var(--color3);
+    border-radius: 15px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    border-radius: 50%;
+    margin: 15px 0;
+    width: 100px;
+}
+h2{
+    color: var(--color1);
+}
+.green{
+    color: var(--hover);
+    margin: 10px 0;
+    font-weight: 600;
+}
+.light{
+    font-weight: 300px;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 14px;
+    color: var(--color1);
+}
+.box{
+    padding: 10px;
+    width: 250px;
+    height: 150px;
+   margin-bottom: 20px;
+    background: var(--color2);
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+    font-weight:bold;
+    border: 1px;
+
+}
+.box:hover{
+    background: var(--hover);
+    color: var(--color2);
+}
